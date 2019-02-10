@@ -528,7 +528,7 @@ li {
   width: 720px;
   text-align: center;
   margin: 0 auto;
-  padding: 2% 3%;
+  padding: 2em 3em;
 }
 
 .home .intro-wrapper .intro {
@@ -555,11 +555,22 @@ li {
   list-style: none;
 }
 
+.home .intro-wrapper .intro .profile-skillset li {
+  margin-right: 10px;
+}
+
 .home .intro-wrapper .intro .profile-skillset li:before {
   width: 1em;
-  margin-right: 0.5em;
+  margin-right: 10px;
   content: "•";
   color: #e45c4c;
+}
+
+.home .intro-wrapper .social-icons {
+  max-width: 100%;
+  width: 720px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .home .intro-wrapper .social-icons ul {
