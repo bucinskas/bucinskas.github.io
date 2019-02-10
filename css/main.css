@@ -518,7 +518,6 @@ li {
 
 .home {
   height: 100vh;
-  position: relative;
 }
 
 .home .intro-wrapper {
@@ -526,7 +525,6 @@ li {
           box-sizing: border-box;
   max-width: 100%;
   width: 720px;
-  position: relative;
   text-align: center;
   margin: 0 auto;
   padding: 2em 3em;
@@ -554,6 +552,24 @@ li {
 
 .home .intro-wrapper .intro .profile-skillset {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .home .intro-wrapper .intro .profile-skillset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .home .intro-wrapper .intro .profile-skillset li {
@@ -578,6 +594,12 @@ li {
 
 .home .intro-wrapper .social-icons ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #stage {
