@@ -572,6 +572,8 @@ li {
   width: 720px;
   text-align: center;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .home .intro-wrapper .social-icons ul {
