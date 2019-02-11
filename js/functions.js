@@ -170,7 +170,7 @@ var Renderer = (function () {
 		setTimeout(function () {
 
 			render(callback);
-		}, 1200 / fps);
+		}, 1300 / fps);
 	};
 
 	var getFrameNumber = function () {
@@ -205,6 +205,6 @@ Renderer.render(function () {
 
 	Particles.animate();
 
-}, 30);
+}, 20);
 
 

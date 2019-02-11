@@ -289,13 +289,9 @@ a {
   font-size: 20px;
 }
 
-a:hover {
-  background-color: #e45c4c;
-}
-
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  color: #191919;
   font-weight: bold;
 }
 
@@ -331,8 +327,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+ul {
+  color: #191919;
+}
+
 p {
   margin: 0 0 20px 0;
+  color: #191919;
 }
 
 em {
@@ -467,6 +468,7 @@ li {
 .main-nav a {
   font-weight: 600;
   font-size: 0.9em;
+  color: #191919;
 }
 
 .main-nav .home-page {
@@ -503,10 +505,6 @@ li {
 
 .main-nav .logo a:hover {
   background-color: transparent;
-}
-
-.active {
-  text-decoration: underline;
 }
 
 .home {
@@ -583,12 +581,20 @@ li {
 
 .home .intro-wrapper .social-icons ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.home .intro-wrapper .social-icons ul a {
+  color: #656363;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.home .intro-wrapper .social-icons ul a:hover {
+  color: black;
+  -webkit-box-shadow: 0 -1px 0 0 white inset,0 -3px 0 0 #e45c4c  inset;
+          box-shadow: 0 -1px 0 0 white inset,0 -3px 0 0 #e45c4c  inset;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 #stage {
@@ -721,6 +727,20 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.portfolio .container .social ul a {
+  color: #656363;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.portfolio .container .social ul a:hover {
+  color: black;
+  -webkit-box-shadow: 0 -1px 0 0 white inset,0 -3px 0 0 #e45c4c  inset;
+          box-shadow: 0 -1px 0 0 white inset,0 -3px 0 0 #e45c4c  inset;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .portfolio .container .header {

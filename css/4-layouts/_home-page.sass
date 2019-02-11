@@ -31,7 +31,6 @@
           background: #e45c4c
           border-radius: 50%  
           margin: 0 5px
-
         li 
           margin-right: 10px 
         li:before 
@@ -48,9 +47,13 @@
       box-sizing: border-box
       ul
         list-style: none 
-        display: flex
-        justify-content: center
-     
+        a 
+          color:#656363
+          transition: all .3s ease-in
+          &:hover 
+             color: black
+             box-shadow: 0 -1px 0 0 white inset,0 -3px 0 0 #e45c4c  inset
+             transition: all .3s ease-out
      
 // particles stage
 #stage
