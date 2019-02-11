@@ -760,6 +760,10 @@ li {
   width: 50%;
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  justify-self: center;
   border: none;
 }
 

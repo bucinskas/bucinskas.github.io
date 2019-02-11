@@ -1,4 +1,23 @@
 
+
+// active nav link 
+
+
+
+// highlight currently active
+$(document).ready(function(){ 
+	var str=location.href.toLowerCase(); 
+	$(".main-nav li a").each(function() { 
+	if (str.indexOf(this.href.toLowerCase()) > -1) {
+	 $("li.active").removeClass("active"); 
+	$(this).parent().addClass("active"); 
+	}
+	 });
+	 })
+
+
+
+
 // home page particles 
 
 
@@ -189,19 +208,3 @@ Renderer.render(function () {
 }, 30);
 
 
-
-
-// active nav link 
-
-
-
-// highlight currently active
-$(document).ready(function(){ 
-	var str=location.href.toLowerCase(); 
-	$(".main-nav li a").each(function() { 
-	if (str.indexOf(this.href.toLowerCase()) > -1) {
-	 $("li.active").removeClass("active"); 
-	$(this).parent().addClass("active"); 
-	}
-	 });
-	 })
