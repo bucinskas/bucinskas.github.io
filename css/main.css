@@ -434,6 +434,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 18px;
+  list-style: none;
 }
 
 li {
@@ -608,7 +609,6 @@ li {
 .box {
   width: 28vmin;
   height: 28vmin;
-  border: 1px dashed rgba(255, 255, 255, 0.4);
   position: relative;
   margin: 0 auto;
 }
@@ -740,7 +740,7 @@ li {
       grid-template-columns: repeat(2, 1fr);
   padding: 20px 30px;
   grid-column-gap: 40px;
-  grid-row-gap: 100px;
+  grid-row-gap: 50px;
   padding: 3%;
 }
 
@@ -750,6 +750,17 @@ li {
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
+}
+
+.portfolio .container .portfolio-section .project-dividor {
+  grid-column: 1 / -1;
+  height: 6px;
+  background: -webkit-gradient(linear, left top, right top, from(gold), to(#e45c4c));
+  background: linear-gradient(to right, gold, #e45c4c);
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: none;
 }
 
 .portfolio .container .portfolio-section .project-description {
