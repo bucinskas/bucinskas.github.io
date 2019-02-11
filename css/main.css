@@ -528,6 +528,7 @@ li {
   text-align: center;
   margin: 0 auto;
   padding: 2em 3em;
+  z-index: 10;
 }
 
 .home .intro-wrapper .intro {
