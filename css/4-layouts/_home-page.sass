@@ -20,13 +20,16 @@
       .profile-name 
         margin: 10px 0
       .profile-skillset
-        list-style: none 
-        display: flex
-        justify-content: center
         font-size: 18px
         box-sizing: border-box
-        @media (max-width: 600px)
-          flex-direction: column
+        .circle 
+          display: inline-block
+          width: 5px
+          height: 5px
+          background: #e45c4c
+          border-radius: 50%  
+          margin: 0 5px
+      
         li 
           margin-right: 10px 
         li:before 
@@ -39,6 +42,7 @@
       width: 720px
       text-align: center
       margin: 0 auto 
+      padding: 0 3em
       box-sizing: border-box
       ul
         list-style: none 
