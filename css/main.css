@@ -517,6 +517,8 @@ li {
 }
 
 .home .intro-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 100%;
   width: 720px;
   text-align: center;
