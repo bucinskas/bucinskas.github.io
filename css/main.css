@@ -595,6 +595,7 @@ li {
 
 #stage {
   overflow: hidden;
+  overflow-height: 100%;
   top: 0;
   left: 0;
   z-index: 1;
@@ -620,7 +621,7 @@ li {
           transform: scale(1.42);
 }
 
-.spin-container {
+.box .spin-container {
   width: 100%;
   height: 100%;
   -webkit-animation: spin 12s linear infinite;
@@ -628,7 +629,7 @@ li {
   position: relative;
 }
 
-.shape {
+.box .shape {
   width: 100%;
   height: 100%;
   -webkit-transition: border-radius 1s ease-out;
@@ -641,7 +642,7 @@ li {
   z-index: 5;
 }
 
-.bd {
+.box .bd {
   width: 142%;
   height: 142%;
   position: absolute;
@@ -655,15 +656,6 @@ li {
   display: flex;
   color: #003;
   font-size: 5vw;
-  font-weight: bold;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
   animation: spin 12s linear infinite reverse;
   opacity: 1;
   z-index: 2;
