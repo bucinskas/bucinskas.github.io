@@ -515,6 +515,8 @@ li {
 
 .active {
   text-decoration: underline;
+  text-decoration-color: #e45c4c;
+  -webkit-text-decoration-color: #e45c4c;
 }
 
 .home {
@@ -757,7 +759,7 @@ li {
   height: 6px;
   background: -webkit-gradient(linear, left top, right top, from(gold), to(#e45c4c));
   background: linear-gradient(to right, gold, #e45c4c);
-  width: 50%;
+  width: 35%;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
