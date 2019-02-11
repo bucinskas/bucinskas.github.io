@@ -571,10 +571,10 @@ li {
 
 .home .intro-wrapper .social-icons {
   max-width: 100%;
-  width: 720px;
+  width: 500px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 3em;
+  padding: 0 4em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
