@@ -593,6 +593,9 @@ li {
 }
 
 .home .intro-wrapper .social-icons ul a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
   color: #525252;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
