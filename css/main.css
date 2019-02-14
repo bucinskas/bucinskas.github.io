@@ -533,13 +533,13 @@ li {
 
 .home .intro-wrapper .intro .about {
   font-size: 1.8em;
-  margin: 10px 0;
+  margin: 15px 0;
   font-weight: 500;
 }
 
 .home .intro-wrapper .intro .about2 {
   font-size: 1.8em;
-  margin: 10px 0;
+  margin: 15px 0;
   font-weight: 500;
 }
 
@@ -575,8 +575,6 @@ li {
 
 .home .intro-wrapper .social-icons {
   max-width: 100%;
-  width: 720px;
-  text-align: center;
   margin: 0 auto;
   padding: 0 3em;
   -webkit-box-sizing: border-box;
