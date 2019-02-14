@@ -426,7 +426,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
   list-style: none;
 }
 
@@ -507,6 +507,10 @@ li {
   background-color: transparent;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .home {
   min-height: 100vh;
   overflow: hidden;
@@ -571,10 +575,10 @@ li {
 
 .home .intro-wrapper .social-icons {
   max-width: 100%;
-  width: 500px;
+  width: 720px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 4em;
+  padding: 0 3em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -584,7 +588,7 @@ li {
 }
 
 .home .intro-wrapper .social-icons ul a {
-  color: #656363;
+  color: #525252;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
@@ -730,7 +734,7 @@ li {
 }
 
 .portfolio .container .social ul a {
-  color: #656363;
+  color: #525252;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
