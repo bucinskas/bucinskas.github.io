@@ -593,6 +593,8 @@ li {
 #stage {
   overflow: hidden;
   overflow-height: 100%;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -611,15 +613,15 @@ li {
   bottom: 0;
   right: 0;
   border-radius: 50%;
+  transform: scale(1.42);
   -webkit-transform: scale(1.42);
-          transform: scale(1.42);
 }
 
 .box .spin-container {
   width: 100%;
   height: 100%;
+  animation: spin 12s linear infinite;
   -webkit-animation: spin 12s linear infinite;
-          animation: spin 12s linear infinite;
   position: relative;
 }
 
@@ -629,8 +631,8 @@ li {
   -webkit-transition: border-radius 1s ease-out;
   transition: border-radius 1s ease-out;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
   -webkit-animation: morph 8s ease-in-out infinite both alternate;
-          animation: morph 8s ease-in-out infinite both alternate;
   position: absolute;
   overflow: hidden;
   z-index: 5;
@@ -660,17 +662,9 @@ li {
   text-align: center;
   text-transform: uppercase;
   animation: spin 12s linear infinite reverse;
+  -webkit-animation: spin 12s linear infinite reverse;
   opacity: 1;
   z-index: 2;
-}
-
-@-webkit-keyframes morph {
-  0% {
-    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-  }
-  100% {
-    border-radius: 40% 60%;
-  }
 }
 
 @keyframes morph {
@@ -682,17 +676,28 @@ li {
   }
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
   to {
+    transform: rotate(1turn);
     -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
   }
 }
 
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
   }
 }
 
