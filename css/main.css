@@ -593,6 +593,8 @@ li {
 #stage {
   overflow: hidden;
   overflow-height: 100%;
+  overflow-width: 100%;
+  overflow-position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
