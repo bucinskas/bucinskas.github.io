@@ -452,6 +452,10 @@ li {
   color: #191919;
 }
 
+.main-nav a:hover {
+  color: #e45c4c;
+}
+
 .main-nav .home-page {
   margin-left: auto;
 }
@@ -482,14 +486,6 @@ li {
   background-size: 82px 82px;
   background-image: url("/images/logo.svg");
   background-repeat: no-repeat;
-}
-
-.main-nav .logo a:hover {
-  background-color: transparent;
-}
-
-.active {
-  text-decoration: underline;
 }
 
 .home {
@@ -593,7 +589,6 @@ li {
 #stage {
   overflow: hidden;
   overflow-height: 100%;
-  overflow-width: 100%;
   overflow-position: absolute;
   top: 0;
   left: 0;
