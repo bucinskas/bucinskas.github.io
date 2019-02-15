@@ -19,12 +19,40 @@ li
       margin: 0
   li
     padding: 15px 0  
+    position: relative
+    &:after 
+      position: absolute
+      content: ''
+      width: 0
+      height: 3px
+      background-color:#e45c4c
+      left: 0
+      bottom: 15px
+      transition: all ease-in 0.25s
+    &:hover:after
+      width: 100%
+    &.active:after 
+      width: 100%  
   a 
     font-weight: 600
     font-size: 0.9em
     color: #191919
-    &:hover 
-      color: #e45c4c
+    display: block
+ 
+
+    // &:after 
+    //   // content: ''
+    //   // display: block 
+    //   // height: 3px
+    //   // width: 0 
+    //   // background: transparent 
+    //   // transition: width .5s ease, background-color .5s ease
+    // &:hover:after 
+
+    //   width: 100%
+    //   background: #e45c4c
+
+
   .home-page
     margin-left: auto  
     @media (max-width: 600px)
@@ -49,7 +77,5 @@ li
       
 
 
-// .active 
-//   text-decoration: underline
 
 

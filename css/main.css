@@ -444,16 +444,34 @@ li {
 
 .main-nav li {
   padding: 15px 0;
+  position: relative;
+}
+
+.main-nav li:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #e45c4c;
+  left: 0;
+  bottom: 15px;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+.main-nav li:hover:after {
+  width: 100%;
+}
+
+.main-nav li.active:after {
+  width: 100%;
 }
 
 .main-nav a {
   font-weight: 600;
   font-size: 0.9em;
   color: #191919;
-}
-
-.main-nav a:hover {
-  color: #e45c4c;
+  display: block;
 }
 
 .main-nav .home-page {
