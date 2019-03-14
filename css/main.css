@@ -220,16 +220,6 @@ th {
   padding: 0;
 }
 
-body {
-  background: #fff;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: 'Barlow', sans-serif;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-
 ::-moz-selection {
   background: #FFF498;
 }
@@ -325,6 +315,16 @@ a {
   font-size: 20px;
 }
 
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Barlow', sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
 .button,
 button,
 input[type="submit"],
@@ -396,8 +396,8 @@ input[type="button"]:focus {
 }
 
 .grow:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.11);
+          transform: scale(1.11);
 }
 
 ul {
@@ -737,6 +737,7 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  list-style: none;
 }
 
 .portfolio .container .social ul a {
