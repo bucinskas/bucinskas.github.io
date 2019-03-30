@@ -714,7 +714,6 @@ li {
 }
 
 .portfolio {
-  min-height: 100vh;
   height: 100%;
   display: -ms-grid;
   display: grid;
